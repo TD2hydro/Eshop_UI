@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>New Tech Inc. | AddProduct </title>
+    <link rel="icon" href="titleicon.PNG">
+
+
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <link rel="stylesheet" href="bootstrap.css.map"/>
+
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body class="bg1">
+<!--Admin login or log in to a another account add also a search bar with a advanced button to advanced Search page -->
+    <div class="container-fluid bg1">
+       <!--header start-->
+      <nav class="row pt-1 bg-primary pb-1 fixed-top ps-1" id="navvbar" >
+        <div class="col-lg-12">
+            <div class="row">
+                <img src="logo2.PNG" href="index.html"alt="" class="col-lg-1 col-md-3 col-3 cursor" id="img1" onclick="home();"/>
+                <div class="d-lg-none d-none">New Tech Inc.</div>
+                <button class="ab col-lg-1 col-md-1 col-12 border-0 bg-transparent text-decoration-underline d-none d-lg-block" onclick="about_us();">About Us</button>
+                <div class="dropdown col-lg-1 col-md-1 col-12 btndrowpdown p-2 d-none d-lg-block">
+                  <button class=" pt-1 pb-1 dropdown-toggle  border-0 bg-transparent text-decoration-underline btndrowpdown" type="button" data-bs-toggle="dropdown">
+                    Catogories
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Kitchen Items</a></li>
+
+                    <li><a class="dropdown-item" href="#">Computer related</a></li>
+                    <li><a class="dropdown-item" href="#">Mechanical industry</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown col-lg-1 col-md-1 col-12 btndrowpdown p-2 d-none d-lg-block">
+                  <button class="pt-1 pb-1 dropdown-toggle  border-0 bg-transparent text-decoration-underline btndrowpdown" type="button" data-bs-toggle="dropdown">
+                    Business
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    
+                    <li><a class="dropdown-item" href="addproduct.html">Add product</a></li>
+                    <li><a class="dropdown-item" href="purchased_history.html">Purchased History</a></li>
+                    
+                  </ul>
+                </div>
+                <div class="dropdown col-lg-1 col-md-1 col-12 btndrowpdown p-2 d-none d-lg-block">
+                  <button class="pt-1 pb-1 dropdown-toggle  border-0 bg-transparent text-decoration-underline btndrowpdown" type="button" data-bs-toggle="dropdown">
+                    Log in
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="login.html">Log in to a User Account</a></li>
+                    <li><a class="dropdown-item" href="admin_login.html">Log in to a Admin Account</a></li>
+                    
+                  </ul>
+                </div>
+                
+                <!--Search bar Start-->
+                
+                <input type="search" class="col-lg-3 col-11 ms-3 m-lg-2 rounded-2 border-danger d-none d-lg-block" placeholder="What are you looking for?!"/>  
+                <button class="border-0 col-lg-1 bg-transparent search d-none d-lg-block">Search</button>
+                <button class="asearch col-lg-1 col-10 offset-1 offset-lg-0 d-none d-lg-block" onclick="a_search();">Advanced</button>                      
+                <!--Search bar End-->
+                
+                <img src="cart.png" class="imgcart  col-lg-1 col-12 pt-2  pb-2 pb-lg-0 offset-lg-0 offset-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" />
+                <button class="col-lg-1 col-11 ms-3 btn btn-primary border-white ms-lg-3 d-none d-lg-block" onclick="register();">Register</button> 
+                
+                  <!--Cart Start-->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                      <div class="offcanvas-body">
+                        
+                          <img src="cart.png" class="ofcanvasimg1">
+                        
+                        
+                        <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                          
+                            <div class="card " style="width: 18rem;" >
+                              <img src="product1.png" class="card-img-top p1 " alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                                <p class="card-text">$30.00/piece</p>
+                                <a href="#" class="btn btn-dark">Ams to Watch list</a>
+                                <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                              </div>
+                            </div>  
+                        </div>
+                        <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                          
+                          <div class="card " style="width: 18rem;" >
+                            <img src="product1.png" class="card-img-top p1 " alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                              <p class="card-text">$30.00/piece</p>
+                              <a href="#" class="btn btn-dark">Ams to Watch list</a>
+                              <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                            </div>
+                          </div>  
+                      </div>
+                      <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                          
+                        <div class="card " style="width: 18rem;" >
+                          <img src="product1.png" class="card-img-top p1 " alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                            <p class="card-text">$30.00/piece</p>
+                            <a href="#" class="btn btn-dark">Ams to Watch list</a>
+                            <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                          </div>
+                        </div>  
+                    </div>
+                    <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                          
+                      <div class="card " style="width: 18rem;" >
+                        <img src="product1.png" class="card-img-top p1 " alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                          <p class="card-text">$30.00/piece</p>
+                          <a href="#" class="btn btn-dark">Ams to Watch list</a>
+                          <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                        </div>
+                      </div>  
+                  </div>
+                        
+                        
+                        
+                        <div class="row mt-lg-2 ">
+                          <a href="#" class="btn btn-info col-lg-4 offset-lg-7">Buy</a>
+                        </div>
+                          
+                      </div>
+                      
+                    
+                  </div>
+                  <!--Cart End-->
+            </div>
+        </div>
+    </nav>
+    <!--header end-->
+
+    <div class="row d-lg-flex justify-content-lg-center">
+           <div class="row">break</div>
+      <div class="col-lg-10 col-10 bg-white ms-lg-1 offset-1 login pb-lg-3 pt-lg-1 mt-5 mt-lg-5 shadow shadow-lg">
+          <div class="row">
+              <div class="col-lg-10 offset-lg-1 fs-1 text1">
+                  Add Product
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-10 col-10 bg-secondary ms-lg-1 offset-1 login pb-lg-3 pt-lg-1 mt-3 mt-lg-3 shadow shadow-lg">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-lg-12 fs-5 col-12">Product Image</div>
+              <input type="file" class="cursor col-lg-12 col-12 mt-2 "/>
+              <div class="col-lg-12 fs-5 mt-1">Catogory</div>
+              <select class="col-lg-5 ms-2 mt-2 border">
+                <option >Computer Sided</option>
+                <option >Kitchen</option>
+                <option >Business Sided</option>
+                <option >Mechanical industry</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-lg-12 fs-5">Product Title</div>
+              <input type="text" class="col-lg-8 mt-2 border"/>
+              <div class="col-lg-12 fs-5 mt-1">Prize</div>
+              <input type="text" class="col-lg-8 mt-2 border"/>
+              <div class="col-lg-12 fs-5 mt-1">Model</div>
+              <input type="text" class="col-lg-8 mt-2 border"/>
+              <div class="col-lg-12 fs-5 mt-1">In Stock</div>
+              <input type="text" class="col-lg-8 mt-2 border" placeholder="How Many Pieces?"/>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-lg-12 fs-5 ">Description</div>
+              <textarea  cols="30" rows="10" class="col-lg-11 mt-2 border "></textarea>
+              <button class="btn btn-success col-lg-8 mt-3 offset-lg-3 mb-4">Add Product</button>
+            </div>
+          </div>
+          
+          
+        </div>
+
+    </div>
+    </div>    
+    
+
+        <!--foter-->
+        <div class="row" >
+          <div class="col-12 text-center text-bg-light bgtop fixed-bottom">
+         
+              &#169; 1990-2023 New Tech Inc. All rights reserved.
+            
+          </div>
+      </div> 
+    </div>
+
+    <script src="bootstrap.bundle.js.map"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

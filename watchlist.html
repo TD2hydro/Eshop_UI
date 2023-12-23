@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>New Tech Inc. | Watch list </title>
+    <link rel="icon" href="titleicon.PNG">
+
+
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <link rel="stylesheet" href="bootstrap.css.map"/>
+
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body class="bg1">
+
+    <div class="container-fluid bg1">
+
+
+
+        <!--header start-->
+      <nav class="row pt-1 bg-primary pb-1 fixed-top ps-1" id="navvbar" >
+        <div class="col-lg-12">
+            <div class="row">
+              <img src="logo2.PNG" alt="" class="col-lg-1 col-md-3 col-3 cursor" id="img1" onclick="home();"/>
+              <div class="d-lg-none d-none">New Tech Inc.</div>
+                <button class="ab col-lg-1 col-md-1 col-12 border-0 bg-transparent text-decoration-underline" onclick="about_us();">About Us</button>
+                <div class="dropdown col-lg-1 col-md-1 col-12 btndrowpdown p-2">
+                  <button class=" pt-1 pb-1 dropdown-toggle  border-0 bg-transparent text-decoration-underline btndrowpdown" type="button" data-bs-toggle="dropdown">
+                    Catogories
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Kitchen Items</a></li>
+
+                    <li><a class="dropdown-item" href="#">Computer related</a></li>
+                    <li><a class="dropdown-item" href="#">Mechanical industry</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown col-lg-1 col-md-1 col-12 btndrowpdown p-2">
+                  <button class="pt-1 pb-1 dropdown-toggle  border-0 bg-transparent text-decoration-underline btndrowpdown" type="button" data-bs-toggle="dropdown">
+                    Business
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    
+                    <li><a class="dropdown-item" href="addproduct.html">Add product</a></li>
+                    <li><a class="dropdown-item" href="purchased_history.html">Purchased History</a></li>
+                    
+                  </ul>
+                </div>
+                <div class="dropdown col-lg-1 col-md-1 col-12 btndrowpdown p-2">
+                  <button class="pt-1 pb-1 dropdown-toggle  border-0 bg-transparent text-decoration-underline btndrowpdown" type="button" data-bs-toggle="dropdown">
+                    Log in
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="login.html">Log in to a User Account</a></li>
+                    <li><a class="dropdown-item" href="admin_login.html">Log in to a Admin Account</a></li>
+                    
+                  </ul>
+                </div>
+                
+                <!--Search bar Start-->
+                
+                <input type="search" class="col-lg-3 col-11 ms-3 m-lg-2 rounded-2 border-danger " placeholder="What are you looking for?!"/>  
+                <button class="border-0 col-lg-1 bg-transparent search">Search</button>
+                <button class="asearch col-lg-1 col-10 offset-1 offset-lg-0" onclick="a_search();">Advanced</button>                      
+                <!--Search bar End-->
+                
+                <img src="cart.png" class="imgcart  col-lg-1 col-12 pt-2  pb-2 pb-lg-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" />
+                <button class="col-lg-1 col-11 ms-3 btn btn-primary border-white ms-lg-3" onclick="register();">Register</button> 
+                
+                  <!--Cart Start-->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                      <div class="offcanvas-body">
+                        
+                          <img src="cart.png" class="ofcanvasimg1">
+                        
+                        
+                        <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                          
+                            <div class="card " style="width: 18rem;" >
+                              <img src="product1.png" class="card-img-top p1 " alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                                <p class="card-text">$30.00/piece</p>
+                                <a href="#" class="btn btn-dark" onclick="watch_list();">Add to Watch list</a>
+                                <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                              </div>
+                            </div>  
+                        </div>
+                        <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                          
+                          <div class="card " style="width: 18rem;" >
+                            <img src="product1.png" class="card-img-top p1 " alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                              <p class="card-text">$30.00/piece</p>
+                              <a href="#" class="btn btn-dark" onclick="watch_list();">Add to Watch list</a>
+                              <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                            </div>
+                          </div>  
+                      </div>
+                      <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                          
+                        <div class="card " style="width: 18rem;" >
+                          <img src="product1.png" class="card-img-top p1 " alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                            <p class="card-text">$30.00/piece</p>
+                            <a href="#" class="btn btn-dark" onclick="watch_list();">Add to Watch list</a>
+                            <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                          </div>
+                        </div>  
+                    </div>
+                    <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                          
+                      <div class="card " style="width: 18rem;" >
+                        <img src="product1.png" class="card-img-top p1 " alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                          <p class="card-text">$30.00/piece</p>
+                          <a href="#" class="btn btn-dark" onclick="watch_list();">Add to Watch list</a>
+                          <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                        </div>
+                      </div>  
+                  </div>
+                        
+                        
+                        
+                        <div class="row mt-lg-2 ">
+                          <a href="#" class="btn btn-info col-lg-4 offset-lg-7">Buy</a>
+                        </div>
+                          
+                      </div>
+                      
+                    
+                  </div>
+                  <!--Cart End-->
+            </div>
+        </div>
+    </nav>
+    <!--header end-->
+          
+
+
+
+
+    <!--As breakings for low resolution-->
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+            <div class="row d-lg-flex justify-content-lg-center mt-5 mt-lg-5 ">
+              
+              <div class="col-lg-10 col-10 bg-white ms-lg-1 offset-1 login pb-lg-3 pt-lg-1 mt-5 mt-lg-5 shadow shadow-lg">
+                
+                <div class="row">
+                    <img src="titleicon.PNG" alt="watch_list" class="col-lg-1 col-2  ms-2 cursor mt-1"  onclick="watch_list();" title="watch list" />
+
+                  <div class="col-2 fs-3 ">
+                    Watch List
+                  </div>
+
+                </div>
+                <div class="row mt-lg-3 border-bottom">
+                    <img src="product2.PNG" class="col-lg-3"/>
+                    <div class="col-lg-7">
+                        <span class="row fs-5 ms-lg-0 ms-1">Power Strip 16A 250V European Electric Adapter Multiple outlet extension cord Home extension garden lead.<a href="singleproductview.html" class="text-decoration-none">more..</a></span>
+                        <span class="row fs-5 fw-bold mt-lg-3 ms-lg-0 ms-1">$1.50/piece</span>
+                        <span class="text-secondary">Catogory-</span>
+                        <span class="text-black">Mechanical</span>
+                        
+                        <div class="row mt-lg-5 mb-lg-2">
+                          
+                            <a href="#" class="btn btn-danger mt-lg-2 mt-1 col-lg-4 col-5 offset-lg-0 offset-3"  onclick="watch_list();">Remove from Watch list</a>
+                            <a href="#" class="btn btn-dark mt-lg-2 mt-1 col-lg-3 col-5 offset-lg-0 offset-3 ms-lg-1" >Add to cart</a>
+                            <a href="#" class="btn btn-success mt-lg-2 mt-1 col-lg-3 col-5 offset-lg-0 offset-3 mb-lg-0 mb-2 ms-lg-1">Buy</a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="row mt-lg-3 border-bottom">
+                    <img src="product1img2.PNG" class="col-lg-3"/>
+                    <div class="col-lg-7">
+                        <span class="row fs-5 ms-lg-0 ms-1">Power Strip 16A 250V European Electric Adapter Multiple outlet extension cord Home extension garden lead.<a href="singleproductview.html" class="text-decoration-none">more..</a></span>
+                        <span class="row fs-5 fw-bold mt-lg-3 ms-lg-0 ms-1">$1.50/piece</span>
+                        <span class="text-secondary">Catogory-</span>
+                        <span class="text-black">Mechanical</span>
+                        
+                        <div class="row mt-lg-5 mb-lg-2">
+                          
+                            <a href="#" class="btn btn-danger mt-lg-2 mt-1 col-lg-4 col-5 offset-lg-0 offset-3"  onclick="watch_list();">Remove from Watch list</a>
+                            <a href="#" class="btn btn-dark mt-lg-2 mt-1 col-lg-3 col-5 offset-lg-0 offset-3 ms-lg-1" >Add to cart</a>
+                            <a href="#" class="btn btn-success mt-lg-2 mt-1 col-lg-3 col-5 offset-lg-0 offset-3 mb-lg-0 mb-2 ms-lg-1">Buy</a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="row mt-lg-3 border-bottom">
+                    <img src="product1img3.PNG" class="col-lg-3"/>
+                    <div class="col-lg-7">
+                        <span class="row fs-5 ms-lg-0 ms-1">Power Strip 16A 250V European Electric Adapter Multiple outlet extension cord Home extension garden lead.<a href="singleproductview.html" class="text-decoration-none">more..</a></span>
+                        <span class="row fs-5 fw-bold mt-lg-3 ms-lg-0 ms-1">$1.50/piece</span>
+                        <span class="text-secondary">Catogory-</span>
+                        <span class="text-black">Mechanical</span>
+                        
+                        <div class="row mt-lg-5 mb-lg-2">
+                          
+                            <a href="#" class="btn btn-danger mt-lg-2 mt-1 col-lg-4 col-5 offset-lg-0 offset-3"  onclick="watch_list();">Remove from Watch list</a>
+                            <a href="#" class="btn btn-dark mt-lg-2 mt-1 col-lg-3 col-5 offset-lg-0 offset-3 ms-lg-1" >Add to cart</a>
+                            <a href="#" class="btn btn-success mt-lg-2 mt-1 col-lg-3 col-5 offset-lg-0 offset-3 mb-lg-0 mb-2 ms-lg-1">Buy</a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                </div>
+
+            </div>
+        
+        <!--foter-->
+        <div class="row" >
+            <div class="col-12 text-center text-bg-light bgtop fixd-bottom">
+           
+                &#169; 1990-2023 New Tech Inc. All rights reserved.
+              
+            </div>
+        </div>   
+            
+        
+
+
+
+
+    </div>
+
+    <script src="bootstrap.bundle.js.map"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+*{
+    font-family: "font";
+    margin: 0px;
+    
+}
+
+.title1{
+    color: #51614d;
+}
+
+.cursor:hover{
+    cursor: pointer;
+}
+.bord1{
+    background-image: url("img6.jpg");
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+     
+}
+.bord2{
+    background-image: url("img8.jpg");
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    
+}
+.bord3{
+    background-image: url("img7.jpg");
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.img2{
+    width: 20%;
+}
+.bgbottom{
+    transition: 500ms;    
+    border-bottom: 0.5px solid rgb(245, 0, 0);
+}
+.bgtop{
+    transition: 500ms;    
+    border-top: 1px solid lightcoral;
+}
+.poster-img-1{
+    height: 700px;
+    background-repeat: no-repeat;
+}
+.poster-caption{
+    margin-bottom: 150px;
+}
+.poster-title{
+    font-size: 60px;
+    color: black;
+    font-weight: bold;
+  
+}
+.poster-txt{
+    font-size: 20px;
+    color: gray;
+   
+}
+.poster-caption-1{
+    margin-bottom: 80px;
+    margin-right: 290px;
+}
+.div2{
+    background-color: #51614d;
+}
+.login{
+    border-radius: 8px;
+    box-shadow:  rgba(0, 17, 255, 0.3);
+
+}
+.invoice{
+    border-radius:0;
+    
+    background-color: rgb(244, 244, 244);
+        
+    
+    box-shadow:  rgba(0, 17, 255, 0.3);
+
+}
+.bg1{
+    background-color: rgb(244, 244, 244);
+    
+}
+.text1{
+    color: rgb(33, 49, 59);
+}
+.div3{
+    width: 100%;
+    height: 2vh;
+}
+@font-face {
+    font-family:"font";
+    src: url("Candara.ttf");
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: red; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    
+    width: 5%;
+    background-color: rgb(67, 237, 92); /* Add a dark-grey background on hover */
+
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+@media(min-width:320px ){
+    .imgcart{
+        width: 10%;
+        height: 10%;
+        
+      }
+}
+@media(min-width:600px ){
+    .imgcart{
+        width: 4%;
+        height: 4%;
+        
+      }
+}
+.ofcanvasimg1{
+    width: 30%;
+}
+
+.p1{
+    width: 50%;
+}
+  .imgcart:hover{
+    cursor: pointer;
+  }
+.search{
+    margin-left: -2%;
+}
+.search:hover{
+    
+    color: white;
+    transition: 500ms;
+}
+.fbhei{
+    height: 70%;
+}
+.btndrowpdown{
+    padding: 2%;
+    border: none;
+    
+}
+.btndrowpdown:hover{
+    transition: 300ms;
+    
+    color: rgb(255, 255, 255);
+}
+.ab:hover{
+    transition: 300ms;
+    
+    color: rgb(255, 255, 255);
+}
+.asearch{
+    background-color: #DC3545;
+    border: 0;
+    border-radius: 5%;
+    color: white;
+}
+.asearch:hover{
+    background-color: #b52e3b;
+}
+.h_search:hover{
+    color: #b52e3b;
+}
+.add_product_img{
+    width: 20%;
+}
+.storeh{
+    height: 320px;
+}
+
+
+
+
+  
+  
+

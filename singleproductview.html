@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>New Tech Inc. | Single_product_View </title>
+    <link rel="icon" href="titleicon.PNG">
+
+
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <link rel="stylesheet" href="bootstrap.css.map"/>
+
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body class="bg1">
+
+    <div class="container-fluid bg1">
+
+
+
+        
+   <!--header start-->
+   <nav class="row pt-1 bg-primary pb-1 fixed-top ps-1" id="navvbar" >
+    <div class="col-lg-12">
+        <div class="row">
+          <img src="logo2.PNG" alt="" class="col-lg-1 col-md-3 col-3 cursor" id="img1" onclick="home();"/>
+          <div class="d-lg-none d-none">New Tech Inc.</div>
+            <button class="ab col-lg-1 col-md-1 col-12 border-0 bg-transparent text-decoration-underline" onclick="about_us();">About Us</button>
+            <div class="dropdown col-lg-1 col-md-1 col-12 btndrowpdown p-2">
+              <button class=" pt-1 pb-1 dropdown-toggle  border-0 bg-transparent text-decoration-underline btndrowpdown" type="button" data-bs-toggle="dropdown">
+                Catogories
+              </button>
+              
+              <ul class="dropdown-menu">
+                <li><div class="dropdown-item">Kitchen Items</div></li>
+                <li><a class="dropdown-item" href="#">Computer related</a></li>
+                <li><a class="dropdown-item" href="#">Mechanical industry</a></li>
+              </ul>
+            </div>
+            <div class="dropdown col-lg-1 col-md-1 col-12 btndrowpdown p-2">
+              <button class="pt-1 pb-1 dropdown-toggle  border-0 bg-transparent text-decoration-underline btndrowpdown" type="button" data-bs-toggle="dropdown">
+                Business
+              </button>
+              
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item" href="addproduct.html">Add product</a></li>
+                <li><a class="dropdown-item" href="purchased_history.html">Purchased History</a></li>
+                
+              </ul>
+            </div>
+            <div class="dropdown col-lg-1 col-md-1 col-12 btndrowpdown p-2">
+              <button class="pt-1 pb-1 dropdown-toggle  border-0 bg-transparent text-decoration-underline btndrowpdown" type="button" data-bs-toggle="dropdown">
+                Log in
+              </button>
+              
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="login.html">Log in to a User Account</a></li>
+                <li><a class="dropdown-item" href="admin_login.html">Log in to a Admin Account</a></li>
+                
+              </ul>
+            </div>
+            
+            <!--Search bar Start-->
+            
+            <input type="search" class="col-lg-3 col-11 ms-3 m-lg-2 rounded-2 border-danger " placeholder="What are you looking for?!"/>  
+            <button class="border-0 col-lg-1 bg-transparent search">Search</button>
+            <button class="asearch col-lg-1 col-10 offset-1 offset-lg-0" onclick="a_search();">Advanced</button>                      
+            <!--Search bar End-->
+            
+            <img src="cart.png" class="imgcart  col-lg-1 col-12 pt-2  pb-2 pb-lg-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" />
+            <button class="col-lg-1 col-11 ms-3 btn btn-primary border-white ms-lg-3" onclick="register();">Register</button> 
+            
+              <!--Cart Start-->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                  <div class="offcanvas-body">
+                    
+                      <img src="cart.png" class="ofcanvasimg1">
+                    
+                    
+                    <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                      
+                        <div class="card " style="width: 18rem;" >
+                          <img src="product1.png" class="card-img-top p1 " alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                            <p class="card-text">$30.00/piece</p>
+                            <a href="#" class="btn btn-dark" onclick="watch_list();">Add to Watch list</a>
+                            <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                          </div>
+                        </div>  
+                    </div>
+                    <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                      
+                      <div class="card " style="width: 18rem;" >
+                        <img src="product1.png" class="card-img-top p1 " alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                          <p class="card-text">$30.00/piece</p>
+                          <a href="#" class="btn btn-dark" onclick="watch_list();">Add to Watch list</a>
+                          <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                        </div>
+                      </div>  
+                  </div>
+                  <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                      
+                    <div class="card " style="width: 18rem;" >
+                      <img src="product1.png" class="card-img-top p1 " alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                        <p class="card-text">$30.00/piece</p>
+                        <a href="#" class="btn btn-dark" onclick="watch_list();">Add to Watch list</a>
+                        <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                      </div>
+                    </div>  
+                </div>
+                <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                      
+                  <div class="card " style="width: 18rem;" >
+                    <img src="product1.png" class="card-img-top p1 " alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                      <p class="card-text">$30.00/piece</p>
+                      <a href="#" class="btn btn-dark" onclick="watch_list();">Add to Watch list</a>
+                      <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                    </div>
+                  </div>  
+              </div>
+                    
+                    
+                    
+                    <div class="row mt-lg-2 ">
+                      <a href="#" class="btn btn-info col-lg-4 offset-lg-7">Buy</a>
+                    </div>
+                      
+                  </div>
+                  
+                
+              </div>
+              <!--Cart End-->
+        </div>
+    </div>
+</nav>
+<!--header end-->
+    <!--As breakings for low resolution-->
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+    <div class="row d-lg-none d-block">&nbsp;</div>
+            <div class="row d-lg-flex justify-content-lg-center mt-5 mt-lg-5 ">
+              
+              <div class="col-lg-10 col-10 bg-white ms-lg-1 offset-1 login pb-lg-3 pt-lg-1 mt-5 mt-lg-5 shadow shadow-lg mb-lg-0 mb-5">
+                
+                <div class="row">
+                  <div class="col-12 fs-3 ">
+                    More Specifications
+                  </div>
+                  <div id="carouselExampleIndicators" class="carousel slide col-lg-5 h-25 mt-3" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="product1img3.PNG"class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="product1.PNG" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="product1img1.PNG" class="d-block w-100 " alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <div class="row">
+                      <h5 class="pt-lg-3 col-lg-12 col-12">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                    <p class="col-lg-12">$30.00/piece</p>
+                    <p class="col-lg-3 text-secondary">Pieces In stock-</p>
+                    <p class="col-lg-3">100</p>
+                    <p class="row text-secondary">More detail about the product-</p>
+                      <table class="border">
+                          
+                        <tr>
+                          <td class="p-1 border-end border-bottom">Product Description</td>
+                          <td class="p-1 border-bottom">V8 Series One USB One Switch Five Pin Multiple Socket Mould</td>
+                        </tr>
+                        <tr>
+                          <td class="p-1 border-end border-bottom">Material of Product</td>
+                          <td class="p-1 border-bottom">PC, PS, ABS, PP, PVC, PMMA, PBT etc</td>
+                        </tr>
+                        <tr>
+                          <td class="p-1 border-end border-bottom">Material of Cavity</td>
+                          <td class="p-1 border-bottom">S136 with Heat treatmen</td>
+                        </tr>
+                        <tr>
+                          <td class="p-1 border-end border-bottom">Mould Building Lead Time</td>
+                          <td class="p-1 border-bottom">T1, 15-20 working days</td>
+                        </tr>
+                        <tr>
+                          <td class="p-1 border-end border-bottom">Surface Finish</td>
+                          <td class="p-1 border-bottom">Polishing</td>
+                        </tr>
+                        <tr>
+                          <td class="p-1 border-end border-bottom">Mould Life</td>
+                          <td class="p-1 border-bottom">10,000,000 injection cycle</td>
+                        </tr>
+                        <tr>
+                          <td class="p-1 border-end border-bottom">Runner</td>
+                          <td class="p-1 border-bottom">Hot /Cold base on the product</td>
+                        </tr>
+                        
+                      </table>
+
+
+                    <p class="col-lg-12 text-secondary mt-2">Shipping By-</p>
+                    <p class="col-lg-3 col-3 offset-lg-1">Express</p>
+                    <p class="col-lg-3 col-3">Long run</p>
+                    <div class="row">
+                      <a href="#" class="btn btn-danger col-lg-3 ms-lg-0 ms-2 mb-lg-0 mb-1">Add to Cart</a>
+                    <a href="#" class="btn btn-success col-lg-3 ms-2 mb-lg-0 mb-1">Buy Now</a>
+                    
+                    
+                      
+                    <img src="titleicon.PNG" alt="watch_list" class="col-lg-1 col-2 border ms-2 cursor "  onclick="watch_list();" title="Add to watch list" />
+
+                     
+                    
+                    </div>
+                    
+                    
+                    </div>
+                  </div>
+                    
+                </div>
+                  
+                </div>
+                
+                
+            </div>  
+        
+        
+        
+        <!--foter-->
+        <div class="row" >
+            <div class="col-12 text-center text-bg-light bgtop fixed-bottom">
+           
+                &#169; 1990-2023 New Tech Inc. All rights reserved.
+              
+            </div>
+        </div>   
+            
+        
+
+
+
+
+    </div>
+
+    <script src="bootstrap.bundle.js.map"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

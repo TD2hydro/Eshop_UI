@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>New Tech Inc. | Advanced Search </title>
+    <link rel="icon" href="titleicon.PNG">
+
+
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <link rel="stylesheet" href="bootstrap.css.map"/>
+
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body class="bg1">
+
+    <div class="container-fluid bg1">
+
+
+
+        <!--header start-->
+      <nav class="row pt-1 bg-primary pb-1 fixed-top ps-1" id="navvbar" >
+        <div class="col-lg-12">
+            <div class="row">
+                <img src="logo2.PNG" href="index.html"alt="" class="col-lg-1 col-md-3 col-3 cursor" id="img1" onclick="home();"/>
+                <div class="d-lg-none d-none">New Tech Inc.</div>
+                <button class="ab col-lg-1 col-md-1 col-12 border-0 bg-transparent text-decoration-underline d-none d-lg-block" onclick="about_us();">About Us</button>
+                <div class="dropdown col-lg-1 col-md-1 col-12 btndrowpdown p-2 d-none d-lg-block">
+                  <button class=" pt-1 pb-1 dropdown-toggle  border-0 bg-transparent text-decoration-underline btndrowpdown" type="button" data-bs-toggle="dropdown">
+                    Catogories
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Kitchen Items</a></li>
+
+                    <li><a class="dropdown-item" href="#">Computer related</a></li>
+                    <li><a class="dropdown-item" href="#">Mechanical industry</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown col-lg-1 col-md-1 col-12 btndrowpdown p-2 d-none d-lg-block">
+                  <button class="pt-1 pb-1 dropdown-toggle  border-0 bg-transparent text-decoration-underline btndrowpdown" type="button" data-bs-toggle="dropdown">
+                    Business
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    
+                    <li><a class="dropdown-item" href="addproduct.html">Add product</a></li>
+                    <li><a class="dropdown-item" href="#">Purchased History</a></li>
+                    
+                  </ul>
+                </div>
+                <div class="dropdown col-lg-1 col-md-1 col-12 btndrowpdown p-2 d-none d-lg-block">
+                  <button class="pt-1 pb-1 dropdown-toggle  border-0 bg-transparent text-decoration-underline btndrowpdown" type="button" data-bs-toggle="dropdown">
+                    Log in
+                  </button>
+                  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="login.html">Log in to a User Account</a></li>
+                    <li><a class="dropdown-item" href="admin_login.html">Log in to a Admin Account</a></li>
+                    
+                  </ul>
+                </div>
+                
+                <!--Search bar Start-->
+                
+                <input type="search" class="col-lg-3 col-11 ms-3 m-lg-2 rounded-2 border-danger d-none d-lg-block" placeholder="What are you looking for?!"/>  
+                <button class="border-0 col-lg-1 bg-transparent search d-none d-lg-block">Search</button>
+                <button class="asearch col-lg-1 col-10 offset-1 offset-lg-0 d-none d-lg-block" onclick="a_search();">Advanced</button>                      
+                <!--Search bar End-->
+                
+                <img src="cart.png" class="imgcart  col-lg-1 col-12 pt-2  pb-2 pb-lg-0 offset-lg-0 offset-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" />
+                <button class="col-lg-1 col-11 ms-3 btn btn-primary border-white ms-lg-3 d-none d-lg-block" onclick="register();">Register</button> 
+                
+                  <!--Cart Start-->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                      <div class="offcanvas-body">
+                        
+                          <img src="cart.png" class="ofcanvasimg1">
+                        
+                        
+                        <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                          
+                            <div class="card " style="width: 18rem;" >
+                              <img src="product1.png" class="card-img-top p1 " alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                                <p class="card-text">$30.00/piece</p>
+                                <a href="#" class="btn btn-dark">Ams to Watch list</a>
+                                <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                              </div>
+                            </div>  
+                        </div>
+                        <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                          
+                          <div class="card " style="width: 18rem;" >
+                            <img src="product1.png" class="card-img-top p1 " alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                              <p class="card-text">$30.00/piece</p>
+                              <a href="#" class="btn btn-dark">Ams to Watch list</a>
+                              <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                            </div>
+                          </div>  
+                      </div>
+                      <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                          
+                        <div class="card " style="width: 18rem;" >
+                          <img src="product1.png" class="card-img-top p1 " alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                            <p class="card-text">$30.00/piece</p>
+                            <a href="#" class="btn btn-dark">Ams to Watch list</a>
+                            <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                          </div>
+                        </div>  
+                    </div>
+                    <div class="row mt-lg-2 d-flex justify-content-center align-content-center">
+                          
+                      <div class="card " style="width: 18rem;" >
+                        <img src="product1.png" class="card-img-top p1 " alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">WK USB C and USB A 13A Single Wall Switched USB Socket (PD3.0 20W)</h5>
+                          <p class="card-text">$30.00/piece</p>
+                          <a href="#" class="btn btn-dark">Ams to Watch list</a>
+                          <a href="#" class="btn btn-danger mt-lg-2">Remove from Cart</a>
+                        </div>
+                      </div>  
+                  </div>
+                        
+                        
+                        
+                        <div class="row mt-lg-2 ">
+                          <a href="#" class="btn btn-info col-lg-4 offset-lg-7">Buy</a>
+                        </div>
+                          
+                      </div>
+                      
+                    
+                  </div>
+                  <!--Cart End-->
+            </div>
+        </div>
+    </nav>
+    <!--header end-->
+
+
+    
+        
+        <br/><br/>
+        <div class="row d-lg-flex justify-content-lg-center">
+           
+            <div class="col-lg-10 col-10 bg-white ms-lg-1 offset-1 login pb-lg-3 pt-lg-1 mt-5 mt-lg-5 shadow shadow-lg">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 fs-2 text1">
+                       Invoice For the Product
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-10 col-10 bg-secondary ms-lg-1 offset-1 login pb-lg-3 pt-lg-1 mt-3 mt-lg-4 shadow shadow-lg ">
+                <div class="row mt-3 ">
+                    <div class="col-lg-10 col-10   offset-lg-1 offset-1 invoice pb-lg-3 pt-lg-1 shadow shadow-lg">
+                        <div class="row">
+                            <div class="col-lg-4 fs-2 fw-bold">New Tech Inc.</div>
+                            <div class="col-lg-1 fw-bold fs-4 offset-lg-6 offset-7">Invoice</div>
+                        </div>
+                        <div class="row"  >
+                            <div class="col-lg-3  fs-5 col-4">No. 50 ,Main Street , Colombo 07</div>
+                            <table class="border col-lg-1 col-6 text-center border-dark fw-bold offset-lg-7 offset-1" >
+                                <tr class="border-bottom border-dark">
+                                    <td class="border-end border-dark">Date</td>
+                                    <td>Invoice #</td>
+                                </tr>
+                                <tr>
+                                    <td class="border-end border-dark">17/08/2022</td>
+                                    <td>19458</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="fw-bold">Mobile:</div>
+                            <div>071 - 8965743</div>
+                            <div>071 - 8938643</div>
+                        </div>
+                        <div class="row mt-2" >
+                            <table class="border border-dark ms-2 col-lg-3 col-5">
+                                <tr>
+                                    <td class="border-bottom border-dark fw-bold">Bill To</td>
+                                </tr>
+                                <tr>
+                                    <td class="pb-lg-4 pb-2">Tharuka Damsith</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="row mt-3">
+                            <table class="border border-dark ms-2 col-lg-10 col-5">
+                                <tr>
+                                    <td class="border-bottom border-dark border-end fw-bold">Item</td>
+                                    <td class="border-bottom border-dark border-end fw-bold ">Description</td>
+                                    <td class="border-bottom border-dark border-end fw-bold">Qty</td>
+                                    <td class="border-bottom border-dark fw-bold">Amount</td>
+                                </tr>
+                                <tr>
+                                    <td class="pb-lg-4 pb-2 border-end border-dark border-bottom">Wall Switched USB Socket</td>
+                                    <td class="pb-lg-4 pb-2 border-end border-dark border-bottom">WK USB C and USB A 13A Single (PD3.0 20W)</td>
+                                    <td class="pb-lg-4 pb-2 border-end border-dark border-bottom">10</td>
+                                    <td class="pb-lg-4 pb-2 border-dark border-bottom">$300</td>
+                                </tr>
+                                
+                            </table>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1 border  offset-lg-8">Total</div>
+                            <div class="col-lg-1 border ">$300</div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                01.STANDARD ONE YEAR MANUFACTURER WARRANTY: The manufacturer warrants this product to be free from defects in workmanship and materials, under normal residential use and conditions, for a period of one (1) year for the original invoice date. Shipping and handling fees are to be paid for by the customer
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div>
+                                02.PLEASE PRODUCE THE INVOICE FOR WARRANTY CLAIMS.
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-3 col-4">
+                                ............................
+                            </div>
+                            <div class="col-lg-3 offset-lg-6 col-4 offset-3">
+                                ............................
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-lg-3 col-5 fw-bold">
+                                New Tech Inc.
+                            </div>
+                            <div class="col-lg-3 offset-lg-6 col-5 offset-2 fw-bold">
+                                Customer Signature
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="row mt-3">
+                    <button class="btn btn-secondary border-info col-lg-2 offset-lg-9 col-10 offset-1 mb-lg-0 mb-5">Print</button>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--foter-->
+        <div class="row" >
+            <div class="col-12 text-center text-bg-light bgtop fixed-bottom">
+           
+                &#169; 1990-2023 New Tech Inc. All rights reserved.
+              
+            </div>
+        </div>   
+            
+        
+
+
+
+
+    </div>
+
+    <script src="bootstrap.bundle.js.map"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
